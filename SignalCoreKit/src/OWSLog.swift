@@ -18,7 +18,7 @@ public func owsFormatLogMessage(_ logString: String,
 /**
  * A minimal DDLog wrapper for swift.
  */
-open class Logger: NSObject {
+open class OWSLog: NSObject {
 
     open class func verbose(_ logString: @autoclosure () -> String,
                             file: String = #file,

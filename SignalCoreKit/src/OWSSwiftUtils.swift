@@ -29,8 +29,8 @@ public func owsFailDebug(_ logMessage: String,
                          file: String = #file,
                          function: String = #function,
                          line: Int = #line) {
-    Logger.error(logMessage, file: file, function: function, line: line)
-    Logger.flush()
+    OWSLog.error(logMessage, file: file, function: function, line: line)
+    OWSLog.flush()
     let formattedMessage = owsFormatLogMessage(logMessage, file: file, function: function, line: line)
     assertionFailure(formattedMessage)
 }
@@ -96,6 +96,6 @@ public class OWSSwiftUtils: NSObject {
 
     @objc
     public class func logStackTrace() {
-        Thread.callStackSymbols.forEach { Logger.error($0) }
+        Thread.callStackSymbols.forEach { OWSLog.error($0) }
     }
 }

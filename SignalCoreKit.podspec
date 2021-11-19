@@ -34,7 +34,4 @@ A Swift & Objective-C library used by other Signal libraries.
   s.dependency 'CocoaLumberjack'
   s.dependency 'OpenSSL-Universal'
 
-  s.test_spec 'Tests' do |test_spec|
-    test_spec.source_files = 'SignalCoreKitTests/src/**/*.{h,m,swift}'
-  end
 end

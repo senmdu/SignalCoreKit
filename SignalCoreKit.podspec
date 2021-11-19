@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
 A Swift & Objective-C library used by other Signal libraries.
   DESC
 
-  s.homepage         = "https://github.com/signalapp/SignalCoreKit"
+  s.homepage         = "https://github.com/senmdu/SignalCoreKit"
   s.license          = 'GPLv3'
   s.author           = { "iOS Team" => "ios@signal.org" }
-  s.source           = { :git => "https://github.com/signalapp/SignalCoreKit.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/senmdu/SignalCoreKit.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/signalapp'
 
   s.platform     = :ios, '10.0'
